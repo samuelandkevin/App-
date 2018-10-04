@@ -1,0 +1,74 @@
+//
+//  NotificationEvent.pch
+//  PikeWay
+//
+//  Created by YHIOS003 on 16/4/18.
+//  Copyright © 2016年 YHSoft. All rights reserved.
+//
+
+#ifndef NotificationEvent_pch
+#define NotificationEvent_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+/**
+ *  通知
+ *
+ */
+
+#define Event_AutoLogin_Error @"event.autoLogin.error"
+
+#define Event_notRegister_showLoginVC @"event.notRegister.showLoginVC"
+#define Event_Login_Success @"event.login.success"
+#define Event_EnterRootVC            @"event.enterRootVC"
+
+/**
+ *  注册成功   userInfo{
+                        key: phone  (NSString)
+                        key: passwd (NSString)
+                      }
+ */
+#define Event_Register_Success @"event.register.success"
+//token失效
+#define Event_Token_Unavailable @"event.token.unavailable"
+
+
+//账号退出
+#define Event_Logout           @"event.logout"
+//用户数据更新成功
+#define Event_UserInfo_UpdateFinish @"event.userInfo.updateFinish"
+
+//分享页上的按钮事件
+#define Event_YHShareButtonView_Click @"event.YHShareButtonView.click"
+
+//删除工作经历或教育经历
+#define Event_Experience_Delete @"event.experience.delete"
+
+
+//setSystemFontSize
+#define kSetSystemFontSize @"setSystemFontSize"
+#define Event_SystemFontSize_Change @"event.SystemFontSize_Change" //系统字体发生改变
+
+
+/**
+ *  UserDefaults key
+ */
+//已经浏览过欢迎页
+#define HasReadWelcomePage @"HasReadWelcomePage"
+//用户手机号
+#define kMobilePhone            @"mobilePhone"
+//税道账号
+#define kTaxAccount             @"taxAccount"
+//是否已经登录过
+#define kLoginOAuth             @"isOAuth"
+//自有平台的uid
+#define kUserUid                @"userUid"
+//企业用户ID
+#define kEnterpriseId           @"enterpriseId"
+//令牌
+#define kAccessToken            @"accessToken"
+//令牌登录时间点
+#define kAccessTokenDate        @"accessTokenDate"
+
+
+#endif /* NotificationEvent_pch */

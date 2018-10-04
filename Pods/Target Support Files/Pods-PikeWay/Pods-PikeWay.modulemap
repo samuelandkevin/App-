@@ -1,0 +1,6 @@
+framework module Pods_PikeWay {
+  umbrella header "Pods-PikeWay-umbrella.h"
+
+  export *
+  module * { export * }
+}
